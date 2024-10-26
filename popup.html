@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LinkedIn Pro Enhancer</title>
+  <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1>LinkedIn Pro Enhancer</h1>
+      <div class="theme-toggle">
+        <input type="checkbox" id="themeSwitch">
+        <label for="themeSwitch">Dark Mode</label>
+      </div>
+    </header>
+
+    <main class="popup-content">
+      <section class="quick-actions">
+        <h2>Quick Actions</h2>
+        <button id="analyzeProfile" class="action-button primary">
+          🔍 Analyze Profile
+        </button>
+        <button id="exportData" class="action-button">
+          💾 Export Data
+        </button>
+        <button id="manageNotes" class="action-button">
+          📝 Manage Notes
+        </button>
+      </section>
+
+      <section class="saved-profiles">
+        <h2>Saved Profiles</h2>
+        <div class="search-box">
+          <input type="text" id="searchProfiles" placeholder="Search saved profiles...">
+        </div>
+        <div id="profilesList" class="profiles-list"></div>
+      </section>
+
+      <section class="settings">
+        <h2>Settings</h2>
+        <div class="setting-item">
+          <label>
+            <input type="checkbox" id="autoAnalyze">
+            Auto-analyze profiles
+          </label>
+        </div>
+        <div class="setting-item">
+          <label>
+            <input type="checkbox" id="notifications">
+            Show notifications
+          </label>
+        </div>
+      </section>
+    </main>
+
+    <footer class="popup-footer">
+      <button id="openOptions" class="text-button">Options</button>
+      <span class="version">v1.1.0</span>
+    </footer>
+  </div>
+  <script type="module" src="js/popup.js"></script>
+</body>
+</html>
